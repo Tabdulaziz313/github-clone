@@ -1,0 +1,71 @@
+.repo {
+    gap: 10px;
+}
+
+
+.repos{
+    border-bottom: 1px solid #dce2e7;
+    padding: 8px;
+
+}
+.wrapRep {
+    max-width: 1000px;
+}
+
+.star {
+    background-color: rgb(216, 216, 216);
+}
+
+.td{
+    text-decoration: none;
+}
+
+.line{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.btnW {
+    color: #373E47;
+    display: inline;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.inputW {
+    color: #373E47;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.sort {
+    gap: 10px
+}
+
+@media screen and (max-width:500px) {
+    .sort {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .btnW {
+        width: 100%;
+    }
+
+    .inputW {
+        width: 100%;
+    }
+
+    .btnN {
+        width: 100%;
+    }
+}
+
+
+
+

@@ -1,0 +1,26 @@
+.footer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 150px;
+
+  &__ul {
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style-type: none;
+
+    &-list {
+      padding: 5px;
+
+      a {
+        text-decoration: none;
+
+      }
+
+    }
+
+  }
+
+}

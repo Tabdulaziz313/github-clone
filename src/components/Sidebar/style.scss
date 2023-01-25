@@ -1,0 +1,44 @@
+.saidbar {
+    margin-top: 110px;
+
+    img {
+        border-radius: 50%;
+        max-width: 300px;
+        max-height: 300px;
+        cursor: pointer;
+    }
+
+    &__ul {
+        list-style-type: none;
+
+    }
+}
+
+
+.tds {
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .saidbar {
+        margin-top: 30px;
+        display: flex;
+
+        img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            cursor: pointer;
+        }
+
+        &__ul {
+            // display: flex;
+            // flex-wrap: wrap;
+        }
+    }
+
+}
