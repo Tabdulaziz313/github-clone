@@ -1,9 +1,10 @@
-
-.gap5{
-    gap: 5px;
+.gap10 {
+    gap: 10px;
 }
 
-.pined-span{
+
+
+.pined-span {
     position: relative;
     top: 1px;
     display: inline-block;
@@ -12,8 +13,34 @@
     border-radius: 50%
 }
 
-.hig-hom{
+.hig-hom {
     height: 120px;
-    gap: 4px;
+    display: flex;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 7px 14px, rgba(0, 0, 0, 0.22) 0px 5px 5px;
+    }
 }
 
+.home-pob{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+
+.hig-hum{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.home {
+    margin-top: 30px;
+}
+
+.home-p {
+    font-size: 12px;
+    opacity: 0.6;
+}

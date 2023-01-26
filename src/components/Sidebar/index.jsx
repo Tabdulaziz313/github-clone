@@ -20,11 +20,11 @@ const index = () => {
       <div>
          <div className="saidbar">
             <img src={count.avatar_url} alt="person img" />
-            <ul className="saidbar__ul text-center">
-               <li className="saidbar__ul--li">{count.name}</li>
-               <li className="saidbar__ul--li">{count.login}</li>
-               <li className="saidbar__ul--li d-none d-md-block" ><button className="btn">follow</button></li>
-               <li className="saidbar__ul--li  d-none d-md-block d-flex "> <NavLink to='/folows' className='tds'>{puiple}Followers{count.followers}</NavLink> <NavLink to='/folowing' className='tds px-2'>Following{count.following}</NavLink></li>
+            <ul className="saidbar__ul ">
+               <li className="saidbar__ul--li h3 ">{count.name}</li>
+               <li className="saidbar__ul--li h4 s-name">{count.login}</li>
+               <li className="saidbar__ul--li d-none d-md-block" ><button className="s-btn">follow</button></li>
+               <li className="saidbar__ul--li  d-none d-md-block d-flex my-3 "> <NavLink to='/folows' className='tds'>{puiple}Followers{count.followers}</NavLink> <NavLink to='/folowing' className='tds px-2'>Following{count.following}</NavLink></li>
                <li className="saidbar__ul--li d-none d-md-block">{count.location}</li>
                {/* <li className="saidbar__ul--li">location</li>
                <li className="saidbar__ul--li">twitter_username</li>

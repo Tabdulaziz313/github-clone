@@ -3,6 +3,9 @@
   width: 100%;
   align-items: center;
   height: 150px;
+  justify-content: space-around;
+
+  
 
   &__ul {
     display: flex;
@@ -16,6 +19,7 @@
 
       a {
         text-decoration: none;
+        color: black;
 
       }
 

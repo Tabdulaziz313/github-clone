@@ -4,19 +4,28 @@
     align-items: center;
     justify-content: space-between;
     // margin: 0 15px;
-    padding: 8px 16px;
+    padding: 8px 16px;  
+    color: #fff;
+    background-color: #282f38;
+
+    .nav-in{
+        border-radius: 5px;
+        padding: 2px 4px;
+        margin: 0 5px;
+    }
+    
 
     a {
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
 
         &:hover {
-            color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
 
             opacity: 0.5;
         }
 
         &:active{
-            color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
             opacity: 0.5;
         }
     }

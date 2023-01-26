@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import "./style.scss";
 import { INCER } from '../../redux/count';
@@ -29,7 +29,7 @@ const index = () => {
         <a href="#" className='nav-link'>{github}</a>
         <form action="">
           <label htmlFor="" className='header-search-wrapper'>
-            <input type="text" name="" id="" placeholder='Search or jump to...'  className='header-search-input' onChange={(e) => distpage(INCER(e.target.value)) } />
+            <input  className="nav-in" type="text" name="" id="" placeholder='Search or jump to...'  onChange={(e) => distpage(INCER(e.target.value))} />
           </label>
         </form>
         <ul className="nav__left--ul">

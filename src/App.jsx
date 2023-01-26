@@ -40,7 +40,7 @@ const App = () => {
                 <Route path="/repositori" element={<Repositori />} />
                 <Route path="/folows" element={<Follows />} />
                 <Route path="/folowing" element={<Following />} />
-                <Route path={count} element={<Search />} />
+                <Route path='/search' element={<Search />} />
                 <Route path="*" element={<Nopage />} />
               </Routes>
             </div>

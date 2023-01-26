@@ -6,7 +6,7 @@ import { setposts } from '../../redux/data';
 import { API } from '../../api/api';
 import "./style.scss";
 const index = () => {
-   
+
    const [count, setCount] = useState([]);
    const distpech = useDispatch();
    useEffect(() => {
@@ -21,19 +21,18 @@ const index = () => {
    </svg>;
 
    return (
-      <div className=" d-flex flex-wrap   flex-md-column  flex-lg-row  justify-content-center w-100 align-items-center align-items-lg-start">
+      <div className=" d-flex flex-wrap  gap10  home flex-md-column  flex-lg-row  justify-content-center w-100 align-items-center align-items-lg-start">
          {count.map((el) => {
             return (
-               <div className=" card  col-12 col-md-6 my-2 mr-1   hig-hom" key={el.repo} >
-                  <div className=" p-3">
-                     <div className="pined-1">
-                        {iconP}
-                        <a href={el.link} className='pinned-link' target="blank" >{el.repo}</a>
-                        <button className='btn'>publick</button>
+               <div className="   col-12 col-md-5  p-3  hig-hom " key={el.repo} >
+                  <div className="  w-100 hig-hum">
+                     <div className="d-flex justify-content-between align-items-center ">
+                        <p className=' m-0'>{iconP}
+                           <a href={el.link} className='pinned-link td  m-1' target="blank" >{el.repo}</a></p>
+                        <button className=' home-pob'>publick</button>
                      </div>
-                     <p className='mt-1 m-0 h6'>{el.description}</p>
-                     <p className='h6 d-flex align-items-center m-0 mt-2'><span className='pined-span mx-2' style={{ backgroundColor: el.languageColor }}></span><span>{el.language}</span>
-                        {el.stars > 0 ? <a href='#' className='nav-link mx-2'>{iconStar} {el.stars}</a> : ""}</p>
+                     <p className='home-p m-0'>{el.description}</p>
+                     <p className='h6 d-flex align-items-center m-0 mt-0'><span className='pined-span mx-2 m-0' style={{ backgroundColor: el.languageColor }}></span><span>{el.language}</span>{el.stars > 0 ? <a href='#' className='nav-link mx-2'>{iconStar} {el.stars}</a> : ""}</p>
                   </div>
 
                </div>
